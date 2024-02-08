@@ -1,0 +1,27 @@
+/*
+Theme Name: theme-gr2
+Theme URI: https://referenced.ca
+Author: Feknous Leyna
+Author URI: https://wordpress.org/
+Description: Theme de base developpe ans le cours de 4w4
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: theme-gr2
+Ce theme a ete developpe dans le cadre du cours 4w4
+*/
+
+////////////////////////////////////////
+/* Variable css*/
+@import "variables";
+////////////////////////////////////////
+/* Regle de nomalisation*/
+@import "normalize";
+////////////////////////////////////////
+/* Regle de base*/
+@import "base/h";
+////////////////////////////////////////
+/* Regle de la pagination*/
+@import "layout";
+

@@ -1,0 +1,15 @@
+body {
+  display: flex;
+}
+
+.global {
+  display: flex;
+  justify-content: center;
+}
+
+.global > section,
+.global > header,
+.global > footer {
+  width: 1100px;
+  border: 1px solid black;
+}/*# sourceMappingURL=layout.css.map */
