@@ -13,10 +13,11 @@ Ce theme a ete developpe dans le cadre du cours 4w4
 */
 /* Variable css*/
 :root {
-  --couleur-arriere-entete: #ccc;
-  --couleur-arriere-accueil: #ddd;
-  --couleur-arriere-evenement: #fff;
-  --couleur-arriere-footer:#eee;
+  --couleur-arriere-entete: #fa3737;
+  --couleur-arriere-accueil: #7ee44f;
+  --couleur-arriere-evenement: #4d52d5;
+  --couleur-arriere-galerie:#adafe0;
+  --couleur-arriere-footer:#e224d9;
 }
 
 /* Regle de base*/
@@ -28,6 +29,11 @@ reference clamp ci-dessous
 
 */
 h1 {
+  font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
+  color: rgba(24, 24, 220, 0.7);
+}
+
+h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
 }
 
@@ -35,16 +41,39 @@ h1 {
 body {
   display: flex;
   flex-direction: column;
+  font-family: Prompt;
 }
 
 .global {
   display: flex;
   justify-content: center;
+  min-height: 30vh;
 }
 
 .global > section,
 .global > header,
 .global > footer {
-  width: 1100px;
-  border: 1px solid black;
-} /*# sourceMappingURL=style.css.map */
+  flex: 0 1 900px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5rem 1rem;
+}
+
+#entete {
+  background-color: var(--couleur-arriere-entete);
+}
+
+#accueil {
+  background-color: var(--couleur-arriere-accueil);
+}
+
+#galerie {
+  background-color: var(--couleur-arriere-galerie);
+}
+
+#evenement {
+  background-color: var(--couleur-arriere-evenement);
+}
+
+#footer {
+  background-color: var(--couleur-arriere-footer);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Prompt;
+}
+
+.global {
+    display: flex;
+    justify-content: center;
+    min-height: 30vh; 
+}
+
+.global>section,
+.global>header,
+.global>footer {
+    // flex : grow = grossir // shrink = étirer si <900 
+    // basic = comprimer pour s'adapter au format mobile
+    flex: 0 1 900px;
+    //border: 1px solid black;
+    background-color: rgba(#000, .1);
+    padding: 5rem 1rem;
+}
+
+#entete {
+    background-color: var( --couleur-arriere-entete);
+}
+
+#accueil {
+    background-color: var(--couleur-arriere-accueil);
+}
+
+#galerie {
+    background-color: var(--couleur-arriere-galerie);
+}
+
+#evenement {
+    background-color: var(--couleur-arriere-evenement);
+}
+
+#footer {
+    background-color: var(--couleur-arriere-footer);
+}
