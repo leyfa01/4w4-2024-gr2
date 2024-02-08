@@ -8,28 +8,39 @@ reference clamp ci-dessous
 h1 {
  
     font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-    color: rgba(#1818dc, .7);
+    color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 h2 {
     font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+    color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 h3 {
     font-size: clamp(0.75rem, -1rem + 4vw, 3rem);
+    color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 h4 {
     font-size: clamp(0.75rem, -1rem + 3vw, 2.5rem);
+    color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 h5 {
-    font-size: clamp(0.75rem, -1rem + 2.5vw, 2rem);
+    font-size: clamp(0.75rem, -1rem + 2.5vw, 2rem);color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 h6 {
-    font-size: clamp(0.6rem, -1rem + 2vw, 1.5rem);
+    font-size: clamp(0.6rem, -1rem + 2vw, 1.5rem);color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 
 
 p {
-    font-size: clamp(0.5rem, -1rem + 1.75vw, 1.25rem);
+    font-size: clamp(0.5rem, -1rem + 1.75vw, 1.25rem);color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }
 hr {
-    font-size: clamp(0.4rem, -1.2rem + 1.5vw, 1rem);
+    font-size: clamp(0.4rem, -1.2rem + 1.5vw, 1rem);color: rgba(#1818dc, var(--transparence));
+    background-color: rgba(#fff);
 }

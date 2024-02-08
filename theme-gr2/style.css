@@ -18,6 +18,8 @@ Ce theme a ete developpe dans le cadre du cours 4w4
   --couleur-arriere-evenement: #0bfcac;
   --couleur-arriere-galerie:#f79616;
   --couleur-arriere-footer:#e22424;
+  --transparence: 0.5;
+  --largeur-rectangle: 1000px;
 }
 
 /* Regle de base*/
@@ -30,7 +32,7 @@ reference clamp ci-dessous
 */
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba(24, 24, 220, 0.7);
+  color: rgba(24, 24, 220, var(--transparence));
 }
 
 h2 {
@@ -77,8 +79,8 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
-  background-color: rgba(0, 0, 0, 0.1);
+  flex: 0 1 var(--largeur-rectangle);
+  background-color: rgba(0, 0, 0, var(--transparence));
   padding: 5rem 1rem;
 }
 

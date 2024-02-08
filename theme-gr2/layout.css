@@ -13,8 +13,8 @@ body {
 .global > section,
 .global > header,
 .global > footer {
-  flex: 0 1 900px;
-  background-color: rgba(0, 0, 0, 0.1);
+  flex: 0 1 var(--largeur-rectangle);
+  background-color: rgba(0, 0, 0, var(--transparence));
   padding: 5rem 1rem;
 }
 
