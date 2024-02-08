@@ -1,12 +1,13 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: Prompt;
+  font-family: Protest Riot;
 }
 
 .global {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-height: 30vh;
 }
 
@@ -14,7 +15,9 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 var(--largeur-rectangle);
-  background-color: rgba(0, 0, 0, var(--transparence));
+  border: dotted rgba(0, 249, 175, 0.5) 1rem;
+  border-top: none;
+  background-color: rgba(0, 0, 0, 0.05);
   padding: 5rem 1rem;
 }
 

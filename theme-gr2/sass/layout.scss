@@ -1,12 +1,13 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: Prompt;
+    font-family: Protest Riot;
 }
 
 .global {
     display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 30vh; 
 }
 
@@ -15,11 +16,15 @@ body {
 .global>footer {
     // flex : grow = grossir // shrink = étirer si <900 
     // basic = comprimer pour s'adapter au format mobile
- flex: 0 1 var(--largeur-rectangle);
+    flex: 0 1 var(--largeur-rectangle);
     //border: 1px solid black;
-    background-color: rgba(#000, var(--transparence));
+    border: dotted rgba(0, 249, 175, 0.5) 1rem;
+    border-top: none;
+    background-color: rgba(#000, 0.05);
     padding: 5rem 1rem;
 }
+
+
 #entete {
     background-color: var( --couleur-arriere-entete);
 }
