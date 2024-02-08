@@ -13,11 +13,11 @@ Ce theme a ete developpe dans le cadre du cours 4w4
 */
 /* Variable css*/
 :root {
-  --couleur-arriere-entete: #fa3737;
-  --couleur-arriere-accueil: #7ee44f;
-  --couleur-arriere-evenement: #4d52d5;
-  --couleur-arriere-galerie:#adafe0;
-  --couleur-arriere-footer:#e224d9;
+  --couleur-arriere-entete: #d7ed44;
+  --couleur-arriere-accueil: #8ffd5c;
+  --couleur-arriere-evenement: #0bfcac;
+  --couleur-arriere-galerie:#f79616;
+  --couleur-arriere-footer:#e22424;
 }
 
 /* Regle de base*/
@@ -35,6 +35,30 @@ h1 {
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
+}
+
+h3 {
+  font-size: clamp(0.75rem, -1rem + 4vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(0.75rem, -1rem + 3vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(0.75rem, -1rem + 2.5vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(0.6rem, -1rem + 2vw, 1.5rem);
+}
+
+p {
+  font-size: clamp(0.5rem, -1rem + 1.75vw, 1.25rem);
+}
+
+hr {
+  font-size: clamp(0.4rem, -1.2rem + 1.5vw, 1rem);
 }
 
 /* Regle de la pagination*/
