@@ -13,14 +13,19 @@ Ce theme a ete developpe dans le cadre du cours 4w4
 */
 /* Variable css*/
 :root {
-  --couleur-arriere-entete: #ff7c7c;
-  --couleur-arriere-accueil: #baff9a;
-  --couleur-arriere-evenement: #fdfd93;
-  --couleur-arriere-galerie:#94a0f6;
-  --couleur-arriere-footer:#ffa9fb;
   --transparence-texte: 0.7;
   --transparence-arriere: 0.3;
   --largeur-rectangle: 1000px;
+  --couleur-arriere-entete: hsl(0, 100%, 50%);
+  --couleur-arriere-accueil: hsl(60, 100%, 50%);
+  --couleur-arriere-evenement: hsl(120, 100%, 50%);
+  --couleur-arriere-galerie: hsl(180, 100%, 50%);
+  --couleur-arriere-footer: hsl(240, 100%, 50%);
+  --couleur-entete: hsl(0, 100%, 15%);
+  --couleur-accueil: hsl(60, 100%, 15%);
+  --couleur-evenement: hsl(120, 100%, 15%);
+  --couleur-galerie: hsl(180, 100%, 15%);
+  --couleur-footer: hsl(240, 100%, 15%);
 }
 
 /* Regle de base*/
@@ -39,37 +44,31 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-  color: rgba(3, 63, 12, var(--transparence-texte));
   background-color: rgba(127, 219, 130, var(--transparence-arriere));
 }
 
 h2 {
   font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-  color: rgba(251, 1, 1, var(--transparence-texte));
   background-color: rgba(251, 248, 252, var(--transparence-arriere));
 }
 
 h3 {
   font-size: clamp(0.75rem, -1rem + 4vw, 3rem);
-  color: rgba(24, 24, 220, var(--transparence-texte));
   background-color: rgba(255, 255, 255, var(--transparence-arriere));
 }
 
 h4 {
   font-size: clamp(0.75rem, -1rem + 3vw, 2.5rem);
-  color: rgba(24, 24, 220, var(--transparence-texte));
   background-color: rgba(255, 255, 255, var(--transparence-arriere));
 }
 
 h5 {
   font-size: clamp(0.75rem, -1rem + 2.5vw, 2rem);
-  color: rgba(220, 132, 24, var(--transparence-texte));
   background-color: rgba(207, 174, 174, var(--transparence-arriere));
 }
 
 h6 {
   font-size: clamp(0.6rem, -1rem + 2vw, 1.5rem);
-  color: rgba(22, 22, 170, var(--transparence-texte));
   background-color: rgba(255, 255, 255, var(--transparence-arriere));
 }
 
@@ -107,20 +106,25 @@ body {
 
 #entete {
   background-color: var(--couleur-arriere-entete);
+  color: var(--couleur-entete);
 }
 
 #accueil {
   background-color: var(--couleur-arriere-accueil);
+  color: var(--couleur-accueil);
 }
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
+  color: var(--couleur-evenement);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
+  color: var(--couleur-galerie);
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
+  color: var(--couleur-footer);
 }/*# sourceMappingURL=style.css.map */

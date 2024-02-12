@@ -1,11 +1,23 @@
 :root{
 
-    --couleur-arriere-entete: #ff7c7c;
-    --couleur-arriere-accueil: #baff9a;
-    --couleur-arriere-evenement: #fdfd93;
-    --couleur-arriere-galerie:#94a0f6;
-    --couleur-arriere-footer:#ffa9fb;
+    // --couleur-arriere-entete: #ff7c7c;
+    // --couleur-arriere-accueil: #baff9a;
+    // --couleur-arriere-evenement: #fdfd93;
+    // --couleur-arriere-galerie:#94a0f6;
+    // --couleur-arriere-footer:#ffa9fb;
     --transparence-texte: 0.7;
     --transparence-arriere: 0.3;
     --largeur-rectangle: 1000px;
+
+    --couleur-arriere-entete: hsl(0, 100%, 50%);
+    --couleur-arriere-accueil: hsl(60, 100%, 50%);
+    --couleur-arriere-evenement: hsl(120, 100%, 50%);
+    --couleur-arriere-galerie: hsl(180, 100%, 50%);
+    --couleur-arriere-footer: hsl(240, 100%, 50%);
+
+    --couleur-entete: hsl(0, 100%, 15%);
+    --couleur-accueil: hsl(60, 100%, 15%);
+    --couleur-evenement: hsl(120, 100%, 15%);
+    --couleur-galerie: hsl(180, 100%, 15%);
+    --couleur-footer: hsl(240, 100%, 15%);
 }
