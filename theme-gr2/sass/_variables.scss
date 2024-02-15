@@ -10,7 +10,7 @@
     --nb-element : 5;
     --increment-angle: calc(360 / var(--nb-element));
     //  360/5 = 72
-    --angle-initial : 180; 
+    --angle-initial : 210; 
     --hu1: var(--angle-initial);
     // hu2 = 252
     --hu2: calc(var(--hu1) + var(--increment-angle));
@@ -25,7 +25,7 @@
     --s-couleur-arriere: 100%; // Saturation
     --l-couleur-arriere: 50%; // Luminosité
     --s-couleur: 100%; // Saturation
-    --l-couleur: 15%;  // Luminosité
+    --l-couleur: 80%;  // Luminosité
 
     --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
     --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere),var(--l-couleur-arriere));
