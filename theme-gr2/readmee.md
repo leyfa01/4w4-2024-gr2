@@ -20,6 +20,5 @@ A réaliser :
 - Une github page 
 
 ### Ma github page
-- (Mettre le lien de ma github page)
-https://eddytuto.github.io/4w4-gr2
+https://leyfa01.github.io/4w4-2024-gr2/theme-gr2/
 
