@@ -15,7 +15,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4
 :root {
   --nb-element: 5;
   --increment-angle: calc(360 / var(--nb-element));
-  --angle-initial: 205;
+  --angle-initial: 215;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
