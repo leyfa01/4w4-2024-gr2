@@ -1,0 +1,20 @@
+// Conteneur de la diagonal
+.diagonal{
+    position: relative;
+    isolation: isolate;
+  
+}
+.diagonal::after{
+    // Creation d'un pseudo-element
+position: absolute;
+content: "";
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: -1;
+transform: skewY(-5deg);
+background-color: var(--couleur-arriere-galerie);
+
+
+}

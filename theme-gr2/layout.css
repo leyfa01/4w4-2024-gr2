@@ -15,15 +15,13 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 var(--largeur-rectangle);
-  border: dotted rgba(0, 249, 175, 0.5) 1rem;
-  border-top: none;
-  background-color: rgba(0, 0, 0, 0.05);
   padding: 5rem 1rem;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -33,12 +31,15 @@ body {
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-evenement);
+  color: var(--couleur-galerie);
+  z-index: 1;
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-evenement) 50%);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
-  color: var(--couleur-galerie);
+  color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {

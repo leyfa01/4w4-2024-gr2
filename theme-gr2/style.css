@@ -15,7 +15,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4
 :root {
   --nb-element: 5;
   --increment-angle: calc(360 / var(--nb-element));
-  --angle-initial: 210;
+  --angle-initial: 224;
   --hu1: var(--angle-initial);
   --hu2: calc(var(--hu1) + var(--increment-angle));
   --hu3: calc(var(--hu2) + var(--increment-angle));
@@ -28,16 +28,25 @@ Ce theme a ete developpe dans le cadre du cours 4w4
   --l-couleur-arriere: 50%;
   --s-couleur: 100%;
   --l-couleur: 80%;
-  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
-  --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere),var(--l-couleur-arriere));
-  --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere),var(--l-couleur-arriere));
-  --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere),var(--l-couleur-arriere));
-  --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere),var(--l-couleur-arriere));
-  --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
-  --couleur-accueil: hsl(var(--hu2), var(--s-couleur),var(--l-couleur));
-  --couleur-evenement: hsl(var(--hu3), var(--s-couleur),var(--l-couleur));
-  --couleur-galerie: hsl(var(--hu4), var(--s-couleur),var(--l-couleur));
-  --couleur-footer: hsl(var(--hu5), var(--s-couleur),var(--l-couleur));
+  /*
+      --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), var(--l-couleur-arriere));
+      --couleur-arriere-accueil: hsl(var(--hu2), var(--s-couleur-arriere),var(--l-couleur-arriere));
+      --couleur-arriere-evenement: hsl(var(--hu3), var(--s-couleur-arriere),var(--l-couleur-arriere));
+      --couleur-arriere-galerie: hsl(var(--hu4), var(--s-couleur-arriere),var(--l-couleur-arriere));
+      --couleur-arriere-footer: hsl(var(--hu5), var(--s-couleur-arriere),var(--l-couleur-arriere));
+
+      --couleur-entete: hsl(var(--hu1), var(--s-couleur), var(--l-couleur));
+      --couleur-accueil: hsl(var(--hu2), var(--s-couleur),var(--l-couleur));
+      --couleur-evenement: hsl(var(--hu3), var(--s-couleur),var(--l-couleur));
+      --couleur-galerie: hsl(var(--hu4), var(--s-couleur),var(--l-couleur));
+      --couleur-footer: hsl(var(--hu5), var(--s-couleur),var(--l-couleur));
+      */
+  --hu2: calc(var(--hu1) + 180);
+  --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
+  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
+  --couleur-arriere-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
+  --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
 }
 
 /* Regle de base*/
@@ -110,15 +119,13 @@ body {
 .global > header,
 .global > footer {
   flex: 0 1 var(--largeur-rectangle);
-  border: dotted rgba(0, 249, 175, 0.5) 1rem;
-  border-top: none;
-  background-color: rgba(0, 0, 0, 0.05);
   padding: 5rem 1rem;
 }
 
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
+  position: relative;
 }
 
 #accueil {
@@ -128,15 +135,58 @@ body {
 
 #galerie {
   background-color: var(--couleur-arriere-galerie);
-  color: var(--couleur-evenement);
+  color: var(--couleur-galerie);
+  z-index: 1;
+  background: linear-gradient(180deg, var(--couleur-arriere-accueil) 50%, var(--couleur-arriere-evenement) 50%);
 }
 
 #evenement {
   background-color: var(--couleur-arriere-evenement);
-  color: var(--couleur-galerie);
+  color: var(--couleur-evenement);
+  position: relative;
 }
 
 #footer {
   background-color: var(--couleur-arriere-footer);
   color: var(--couleur-footer);
+}
+
+/* Effet de vague*/
+.vague {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.vague svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.vague .shape-fill {
+  fill: #FFFFFF;
+}
+
+/* Effet de vague*/
+.diagonal {
+  position: relative;
+  isolation: isolate;
+}
+
+.diagonal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  transform: skewY(-5deg);
+  background-color: var(--couleur-arriere-galerie);
 }/*# sourceMappingURL=style.css.map */
