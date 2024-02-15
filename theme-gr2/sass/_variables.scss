@@ -10,7 +10,7 @@
     --nb-element : 5;
     --increment-angle: calc(360 / var(--nb-element));
     //  360/5 = 72
-    --angle-initial : 224; 
+    --angle-initial : 210; 
     --hu1: var(--angle-initial);
     --hu2: calc(var(--hu1) + var(--increment-angle));
     --hu3: calc(var(--hu2) + var(--increment-angle));
@@ -39,13 +39,20 @@
     --couleur-footer: hsl(var(--hu5), var(--s-couleur),var(--l-couleur));
     */
     --hu2 : calc(var(--hu1) + 180); //Couleur complementaire
-    --hu3 : calc(var(--hu2) + 70);
+    --hu3 : calc(var(--hu2) + 45);
+    --hu4 : calc(var(--hu3) + 180);
     --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
     --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
     --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
     --couleur-arriere-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 75%);
     --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
-    --couleur-arriere-bouton: hsl(var(--hu3), var(--s-couleur-arriere), 90%);
-    --couleur-arriere-bouton-survol: hsl(var--hu2, var(var(--s-couleur-arriere), 10%));
+    --couleur-arriere-bouton: hsl(var(--hu4), var(--s-couleur-arriere), 80%);
+    --couleur-arriere-bouton-survol: hsl(var(--hu3), var(--s-couleur-arriere), 60%);
 
+    --couleur-entete: hsl(var(--hu1), var(--s-couleur-arriere), 40%);
+    --couleur-entete-ombre: hsl(var(--hu1), var(--s-couleur-arriere), 35%);
+    --couleur-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 45%);
+    --couleur-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 50%);
+    --couleur-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 55%);
+    --couleur-footer: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
 }
