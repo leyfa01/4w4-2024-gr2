@@ -9,30 +9,30 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 h1 {
     font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
-    background-color: rgba(#7fdb82, var(--transparence-arriere  ));
+    // background-color: rgba(#7fdb82, var(--transparence-arriere));
+    // border-radius: 10px;
+    text-shadow: 2px 2px 20px var(--couleur-arriere-bouton);
 }
 h2 {
     font-size: clamp(1rem, -0.5714rem + 6.2857vw, 3.75rem);
-    background-color: rgba(#fbf8fc, var(--transparence-arriere ));
+    // background-color: rgba(#fbf8fc, var(--transparence-arriere));
+    // border-radius: 20px;
 }
 h3 {
     font-size: clamp(0.75rem, -1rem + 4vw, 3rem);
-    background-color: rgba(#fff, var(--transparence-arriere ));
 }   
 h4 {
     font-size: clamp(0.75rem, -1rem + 3vw, 2.5rem);
-    background-color: rgba(#fff, var(--transparence-arriere ));
 }
 h5 {
     font-size: clamp(0.75rem, -1rem + 2.5vw, 2rem);
-    background-color: rgba(#cfaeae, var(--transparence-arriere ));
 }
 h6 {
     font-size: clamp(0.6rem, -1rem + 2vw, 1.5rem);
-    background-color: rgba(#fff, var(--transparence-arriere ));
 }
 
 
