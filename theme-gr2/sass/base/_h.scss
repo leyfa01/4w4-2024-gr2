@@ -5,12 +5,6 @@ reference clamp ci-dessous
  https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 
 */
-h1,h2,h3,h4,h5,h6 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 h1 {
     font-size: clamp(1.5rem, -2.875rem + 14vw, 5rem);
     // background-color: rgba(#7fdb82, var(--transparence-arriere));
@@ -41,4 +35,8 @@ p {
 }
 hr {
     font-size: clamp(0.4rem, -1.2rem + 1.5vw, 1rem);
+}
+span {
+    display: block;
+    text-align: center;
 }
