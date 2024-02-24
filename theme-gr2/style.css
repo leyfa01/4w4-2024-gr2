@@ -44,7 +44,7 @@ Ce theme a ete developpe dans le cadre du cours 4w4
   --hu2: calc(var(--hu1) + 131);
   --hu3: calc(var(--hu1) - 126);
   --couleur-arriere-entete: hsl(var(--hu1), var(--s-couleur-arriere), 60%);
-  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 65%);
+  --couleur-arriere-accueil: hsl(var(--hu1), var(--s-couleur-arriere), 35%);
   --couleur-arriere-evenement: hsl(var(--hu1), var(--s-couleur-arriere), 70%);
   --couleur-arriere-galerie: hsl(var(--hu2), var(--s-couleur-arriere), 90%);
   --couleur-arriere-footer: hsl(var(--hu1), var(--s-couleur-arriere), 80%);
