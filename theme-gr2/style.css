@@ -260,4 +260,11 @@ a:visited {
 a:hover, a:focus {
   color: var(--couleur-lien-hover);
   transform: scale(150%);
+}
+
+div.note {
+  border-left: 3px solid var(--couleur-arriere-evenement);
+  background-color: var(--couleur-arriere-footer);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=style.css.map */
