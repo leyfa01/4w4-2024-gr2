@@ -18,6 +18,10 @@ body {
   padding: 5rem 1rem;
 }
 
+.global > header {
+  flex: 0 1 1300px;
+}
+
 #entete {
   background-color: var(--couleur-arriere-entete);
   color: var(--couleur-entete);
