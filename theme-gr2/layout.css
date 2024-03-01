@@ -53,18 +53,10 @@ body {
 
 #evenement > section.accueil__evenement {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  z-index: 100;
 }
 
 #evenement > section.accueil__evenement > a.bouton {
-  background-color: var(--couleur-arriere-bouton);
-  padding: 1rem;
-  text-decoration: none;
-}
-
-#evenement > section.accueil__evenement > a.bouton:hover {
-  background-color: var(--couleur-arriere-bouton-survol);
+  text-align: center;
+  z-index: 2;
 }/*# sourceMappingURL=layout.css.map */
