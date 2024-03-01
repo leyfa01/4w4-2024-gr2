@@ -1,34 +1,31 @@
-# Exercice #1
-## Reproduire et améliorer la maquette exemple présenté au cours
+# Labo #3
+## Création d'un site WP.
+## Adaptation du thème de exercice #1
 
+Création du modèle index.php
 
-### Continuer la version du Laboratoire #2
-- Amélioration du dossier Sass
-- Ajout dans style.scss
-- Utilisation de différentes technique pour élaborer une palette de couleur
-    - monochrome (une seule teinte et on fait varier la saturation et la luminosité)
-    - complémentaire (deux teinte à 180deg)
-    - triade ( trois teinte +/- 120%)
-- Utilisation de la règle 60-30-10
-- Améliorer l'entête en ajoutant une image en background qui s'enligne horizontalement avec les titre de l'entête
-- Création d'un bouton utilisant les variables, la propriété background-image, linear-gradient. Le bouton réagis aux événements :hover et :active
-- Création de lien réagissant aux événements :hover :visited :focus 
-- Amélioration générale de la pagination
-- Ajout de nouveaux élément HTML
+Création de la branche labo3
 
+minimum 3 commits
 
+Un Readme.md qui contiendra:
 
+Le nom de l'auteur
+L'objectif du labo3
+Les réalisations :
 
-A réaliser :
-- Améliorer l'entête 
-- Ajouter une image
-- Ajouter un bouton
-- Ajouter des liens
-- Améliorer la pagination
-- Ajouter de nouveaux élément HTML
+- Décomposé le titre de chaque cours:
 
-- Une github page 
+   - sigle du cours ex: 582-4W4
+   - le titre du cours ex: Conception d'interface et développement Web
+   - la durée du cours : 90h
+- Garder les 30 premiers mots de la description du cours.
 
-### Ma github page
-https://leyfa01.github.io/4w4-2024-gr2/theme-gr2/
-
+- La section galerie (ou autre section) affichera la liste des cours du TIM en 3 ou 4 colonnes.
+- La liste devra s'adapter aux différentes largeurs de fenêtre en mobile une seule colonne.
+- Chacune des cartes de cours sera formatés en en utilisant les flex box
+- Un lien vers la github-page
+Barème de correction
+Organistion du code, 3 commits minimum (1 point)
+Résultat sous forme de github page avec index.htm (.5 point)
+Design global de la page (.5 point)

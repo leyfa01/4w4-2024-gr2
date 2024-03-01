@@ -64,14 +64,16 @@
   <?php if(have_posts()):
                     while(have_posts()): the_post();
                     $titre = get_the_title();
-                    
+                    $positionHeure = strpos($titre, " (");
+                    $titreSansHeure = substr($titre, 0, $sigle);
+                    $nbrHeure = substr($titre, $sigle);
   // strpos()
   ?>
 
   <div class= "carte">
-  <h5><?php echo $titre?></h5>
+  <h5><?php echo $sig ?></h5>
   <p> <?php echo wp_trim_words(get_the_content(), 10);?></p>
-
+  <h5><?php echo $nbrHeure ?></h5>
   </div>
   <?php endwhile; ?>
   <?php endif; ?>   
