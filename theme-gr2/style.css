@@ -315,7 +315,7 @@ div.note {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex: 0 1 23%;
+  flex: 0 1 20%;
   background-color: hsl(var(--hu1), var(--s-couleur-arriere), 75%);
 }
 
